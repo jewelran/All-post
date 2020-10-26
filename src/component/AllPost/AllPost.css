@@ -1,0 +1,13 @@
+.psotContainer{
+    width:25%;
+    height: 20%;
+    float: left;
+    padding:20px;
+    
+}
+.imgContiner{
+    padding:20px;
+}
+.imgContiner>img{
+    border-radius: 50%;
+}
