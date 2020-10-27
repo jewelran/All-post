@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 // import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 
 import './AllPost.css'
-import { Button, Link } from '@material-ui/core';
-const AllPost = (props) => {
+import { Button } from '@material-ui/core';
+import { Link} from 'react-router-dom'
+const AllPost = (props) => { 
     const { id, title, body } = props.users
     const [randonUser, setRandonUsers] = useState([]);
     useEffect(() => {
