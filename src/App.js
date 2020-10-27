@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Post from "./component/AllPost/Post/Post";
+import NotFound from "./component/NotFound/NotFound";
+import PostDtail from "./component/PostDetail/PostDtail";
 
 function App() {
   
@@ -18,9 +20,13 @@ function App() {
          <Route exact path = '/'>
           <Post></Post>
          </Route>
-         <Route exact path = "/postDetail/">
-
+         <Route path = "/post">
+           <PostDtail></PostDtail>
          </Route>
+         <Route path = "*">
+           <NotFound></NotFound>
+         </Route>
+         
        </Switch>
      </Router>
     </div>
