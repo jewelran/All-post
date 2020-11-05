@@ -20,7 +20,7 @@ function App() {
          <Route exact path = '/'>
           <Post></Post>
          </Route>
-         <Route path = "/post">
+         <Route path = "/:post/">
            <PostDtail></PostDtail>
          </Route>
          <Route path = "*">

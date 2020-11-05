@@ -3,7 +3,7 @@ import React from 'react';
 const PostDtail = () => {
     return (
         <div>
-            <h3>commig soon Post details.</h3>
+            <h2> hy comming soon post detail</h2>
         </div>
     );
 };

@@ -11,3 +11,6 @@
 .imgContiner>img{
     border-radius: 50%;
 }
+.link{
+    text-decoration: none;
+}

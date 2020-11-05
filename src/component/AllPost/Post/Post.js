@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import PostDtail from '../../PostDetail/PostDtail';
 import AllPost from '../AllPost';
 
 const Post = () => {
@@ -15,15 +16,17 @@ useEffect(() => {
   .then(res => res.json())
   .then(data => setUsers(data))
 },[])
-
+const PostDtailHandle = () => {
+setUsers(users)
+}
     return (
         <div>
             <h1>All post</h1>
              {
-       users.map(user => <AllPost users={user} >
-     
-       </AllPost>)
+       users.map(user => <AllPost users={user}></AllPost>)
+
      }
+       
         </div>
     );
 };
